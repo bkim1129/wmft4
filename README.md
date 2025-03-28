@@ -37,10 +37,6 @@ Welcome to the repository for the manuscript **“The Development and Validity o
 │   ├── 03_wmft_fm_validity.py
 │   ├── 04_WMFT4_MDC_MCID.R
 │   └── ...
-├── figures
-│   ├── EFA_results.png
-│   ├── CFA_results.png
-│   └── ...
 └── README.md
 ```
 

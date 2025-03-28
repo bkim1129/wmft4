@@ -20,16 +20,12 @@ Welcome to the repository for the manuscript **“The Development and Validity o
 ## Repository Structure
 
 ```plaintext
-├── Factor Analysis Data
+├── data
 │   ├── wmft_all.csv
 │   ├── trial_group.csv
 │   ├── chronicity_all.csv
 │   ├── FM scores.csv
-│   └── ...
-├── Feature Selection and Data Reduction Analysis
 │   ├── wmft_rate_for_data_reduction.csv
-│   └── ...
-├── WMFT-4 Psychometrics Analaysis Data
 │   ├── WMFT_pre_new.csv
 │   ├── WMFT_post_new.csv
 │   ├── FM_new.csv

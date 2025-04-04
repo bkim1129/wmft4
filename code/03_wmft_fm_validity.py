@@ -9,7 +9,7 @@ from sklearn.utils import resample
 
 # 1. LOAD THE DATA
 # ---------------------------------------------------------------------------
-df = pd.read_csv("data/Full_data_wmft.csv")  # Adjust path/name if necessary
+df = pd.read_csv("data/wmft_rate_for_data_reduction.csv")  # Adjust path/name if necessary
 
 # If your file uses columns named differently, modify here:
 wmft_cols = [f"WMFT{i}" for i in range(1, 16)]  # e.g., WMFT1 ... WMFT15

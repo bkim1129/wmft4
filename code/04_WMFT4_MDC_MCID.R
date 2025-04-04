@@ -20,13 +20,13 @@ library(rio)
 
 
 # Enter baseline and follow-up measurements for a group of patients
-baseline <- read.csv(file = 'C:/Users/kimbo/OneDrive - SUNY Upstate Medical University/icloud backup/USC Research/USC Research/DTI data analysis_022415/WMFT_pre_new.csv', header=FALSE)
+baseline <- read.csv(file = 'data/WMFT_pre_new.csv', header=FALSE)
 
-post <- read.csv(file = 'C:/Users/kimbo/OneDrive - SUNY Upstate Medical University/icloud backup/USC Research/USC Research/DTI data analysis_022415/WMFT_post_new.csv', header=FALSE)
+post <- read.csv(file = 'data/WMFT_post_new.csv', header=FALSE)
 
-FMA <- read.csv(file = 'C:/Users/kimbo/OneDrive - SUNY Upstate Medical University/icloud backup/USC Research/USC Research/DTI data analysis_022415/FM_new.csv', header=FALSE)
+FMA <- read.csv(file = 'data/FM_new.csv', header=FALSE)
 
-FMA_post <- read.csv(file = 'C:/Users/kimbo/OneDrive - SUNY Upstate Medical University/icloud backup/USC Research/USC Research/DTI data analysis_022415/FM_post_new.csv', header=FALSE)
+FMA_post <- read.csv(file = 'data/FM_post_new.csv', header=FALSE)
 
 ## Distribution comparison of WMFT Time scores
 

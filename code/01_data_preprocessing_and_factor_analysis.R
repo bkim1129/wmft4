@@ -1,3 +1,18 @@
+library(caret)
+library(boot)
+library(MASS)
+library(Hmisc)
+library(MVN)
+library(energy)
+library(lavaan)
+library(lavaanPlot)
+library(semPlot)
+library(psych)
+library(readxl)
+library(REdaS)
+library(GPArotation)
+library(rio)
+
 data <- read.csv(file = 'data/WMFT_CSM/wmft_all.csv')
 
 group <- read.csv(file = 'data/trial_group.csv'
@@ -18,21 +33,6 @@ data$group <- group$group
 data$chronicity <- chronicity$chronicity
 data$FM <- FM$FM
 data<-data[-264,]
-
-library(caret)
-library(boot)
-library(MASS)
-library(Hmisc)
-library(MVN)
-library(energy)
-library(lavaan)
-library(lavaanPlot)
-library(semPlot)
-library(psych)
-library(readxl)
-library(REdaS)
-library(GPArotation)
-library(rio)
 
 #### Data Pre-processing
 

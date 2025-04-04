@@ -1,15 +1,10 @@
-data <- read.csv(file = 'C:/Users/kimbo/OneDrive - SUNY Upstate Medical University/WMFT_CSM/wmft_all.csv')
-#data <- read.csv(file = 'C:/Users/bkjus/OneDrive - SUNY Upstate Medical University/WMFT_CSM/wmft_all.csv')
+data <- read.csv(file = 'data/WMFT_CSM/wmft_all.csv')
 
-group <- read.csv(file = 'C:/Users/kimbo/OneDrive - SUNY Upstate Medical University/WMFT_CSM/trial_group.csv')
-#group <- read.csv(file = 'C:/Users/bkjus/OneDrive - SUNY Upstate Medical University/WMFT_CSM/trial_group.csv')
+group <- read.csv(file = 'data/trial_group.csv'
 
+chronicity <- read.csv(file = 'data/chronicity_all.csv')
 
-chronicity <- read.csv(file = 'C:/Users/kimbo/OneDrive - SUNY Upstate Medical University/WMFT_CSM/chronicity_all.csv')
-#chronicity <- read.csv(file = 'C:/Users/bkjus/OneDrive - SUNY Upstate Medical University/WMFT_CSM/chronicity_all.csv')
-
-FM <- read.csv(file = 'C:/Users/kimbo/OneDrive - SUNY Upstate Medical University/WMFT_CSM/FM scores.csv')
-#FM <- read.csv(file = 'C:/Users/bkjus/OneDrive - SUNY Upstate Medical University/WMFT_CSM/FM scores.csv')
+FM <- read.csv(file = 'data/FM scores.csv')
 
 rate=60/data
 rate$group <- group$group

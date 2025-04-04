@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load your CSV file
-file_path = 'wmft_rate_for_data_reduction.csv'  # Replace this with the path to your file
+file_path = 'data/wmft_rate_for_data_reduction.csv'  # Replace this with the path to your file
 wmft_data = pd.read_csv(file_path)
 
 # Select features V1 to V15

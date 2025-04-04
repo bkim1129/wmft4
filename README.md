@@ -44,8 +44,8 @@ Welcome to the repository for the manuscript **“The Development and Validity o
    - Contains anonymized datasets used in the manuscript.  
    - Each file includes participant IDs (coded) and item-level WMFT data for baseline and (if available) post-intervention.
 2. **code/**  
-   - **R Scripts**: Preprocessing, factor analysis (EFA/CFA), psychometric property calculations.  
-   - **Python Scripts**: Feature selection (SelectKBest), Random Forest training for item reduction.  
+   - **R Scripts**: Preprocessing, factor analysis (EFA/CFA), psychometric property calculations (MDC & MCID).  
+   - **Python Scripts**: Feature selection (SelectKBest), Random Forest training for item reduction, and psychometric property calculations (validity).  
 3. **figures/**  
    - Stores outputs and plots (e.g., Scree plots, CFA diagrams, bootstrap frequency charts).
 

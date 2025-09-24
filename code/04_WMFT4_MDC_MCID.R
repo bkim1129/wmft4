@@ -20,13 +20,13 @@ library(rio)
 
 
 # Enter baseline and follow-up measurements for a group of patients
-baseline <- read.csv(file = 'data/WMFT_pre_new.csv', header=FALSE)
+baseline <- read.csv(file = 'C:/Users/kimbo/OneDrive - SUNY Upstate Medical University/icloud backup/USC Research/USC Research/DTI data analysis_022415/WMFT_pre_new.csv', header=FALSE)
 
-post <- read.csv(file = 'data/WMFT_post_new.csv', header=FALSE)
+post <- read.csv(file = 'C:/Users/kimbo/OneDrive - SUNY Upstate Medical University/icloud backup/USC Research/USC Research/DTI data analysis_022415/WMFT_post_new.csv', header=FALSE)
 
-FMA <- read.csv(file = 'data/FM_new.csv', header=FALSE)
+FMA <- read.csv(file = 'C:/Users/kimbo/OneDrive - SUNY Upstate Medical University/icloud backup/USC Research/USC Research/DTI data analysis_022415/FM_new.csv', header=FALSE)
 
-FMA_post <- read.csv(file = 'data/FM_post_new.csv', header=FALSE)
+FMA_post <- read.csv(file = 'C:/Users/kimbo/OneDrive - SUNY Upstate Medical University/icloud backup/USC Research/USC Research/DTI data analysis_022415/FM_post_new.csv', header=FALSE)
 
 ## Distribution comparison of WMFT Time scores
 
@@ -95,31 +95,6 @@ sd_4 <- sd(unlist(all[c(3, 5, 6, 8)]))
 mean_of_diff_4 <- mean(mean_diff_4)
 sd_of_diff_4 <- sd(mean_diff_4)
 
-# Calculate MDC at 90% confidence level - using SEM
-MDC_15 <- qt(0.90, df = 396 - 1) * sd_of_diff_15 * sqrt(1-r_15) * sqrt(2)
-
-MDC_15
-
-MDC_4 <- qt(0.90, df = 396 - 1) * sd_of_diff_4 *  sqrt(1-r_4) * sqrt(2)
-
-MDC_4
-
-# Calculate MDC at 95% confidence level - using SEM
-MDC_15_95 <- qt(0.95, df = 396 - 1) * sd_of_diff_15 * sqrt(1-r_15) * sqrt(2)
-
-MDC_15_95
-
-MDC_4_95 <- qt(0.95, df = 396 - 1) * sd_of_diff_4 *  sqrt(1-r_4) * sqrt(2)
-
-MDC_4_95
-
-# Calculate MCID based on effect size of 0.2
-
-#MCID_15 <- 0.2 * sd_of_diff_15
-#MCID_15
-
-#MCID_4 <-  0.2 * sd_of_diff_4
-#MCID_4
 
 # Calculate MCID based on effect size of 0.8
 
@@ -130,10 +105,6 @@ MCID_4 <-  0.8 * sd_of_diff_4
 MCID_4
 
 # Print results
-cat("MDC_15 at 90% confidence level:", MDC_15, "\n")
-cat("MDC_4 at 90% confidence level:", MDC_4, "\n")
-cat("MDC_15 at 95% confidence level:", MDC_15_95, "\n")
-cat("MDC_4 at 95% confidence level:", MDC_4_95, "\n")
 cat("MCID_15 based on effect size of 0.8:", MCID_15, "\n")
 cat("MCID_4 based on effect size of 0.8:", MCID_4, "\n")
 
